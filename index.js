@@ -12,6 +12,7 @@ const client = new Client({
 client.once('ready', () => {
   console.log(`✅ Bot pronto! Collegato come ${client.user.tag}`);
 });
+const DISCORD_TOKEN = "MTM5MTAzMzk4MTEyNTc5MTg3NA.Gv9aqB.q0tQYs9fZ3e8Bz1jHrKSEStWaLWziYjDXZwBZI";
 
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
@@ -75,4 +76,4 @@ client.on('messageCreate', async (message) => {
   }
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(DISCORD_TOKEN);
