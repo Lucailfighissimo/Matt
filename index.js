@@ -31,7 +31,7 @@ client.on('messageCreate', async (message) => {
     try {
       const response = await fetch(`https://api.brawlstars.com/v1/players/%23${playerTag}`, {
         headers: {
-          'Authorization': `Bearer ${process.env.BRAWL_STARS_TOKEN}`,
+          'Authorization': `Bearer "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjZhNzNhZjc5LTIxZTEtNDFlNS1iYWM1LTMyNGQyMWE3ZTk2NyIsImlhdCI6MTc1MTcyNzM2Miwic3ViIjoiZGV2ZWxvcGVyLzliMjlkNGIyLTQzNjUtNWQwMi03NTlhLTExOWI1ZjAxZTU3NyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMy4yMjAuMTU5LjM0IiwiMzQuNjEuMTMwLjcxIl0sInR5cGUiOiJjbGllbnQifV19.v9_7kp8rFCedAPfXNhD7yaO3U2yMHvwPfaLXbF2S86GaAGL4TekOejCjHCVv3WObHAtNZAKr_R-gpBBEagb29g"`,
           'Accept': 'application/json'
         }
       });
